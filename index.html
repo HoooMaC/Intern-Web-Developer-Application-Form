@@ -11,11 +11,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
           rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div id="modal" class="modal-succes">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         class="modal-icon"
+         viewBox="0 0 512 512">
+        <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path fill="#63E6BE"
+              d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"/>
+    </svg>
+    <h2 class="modal-title">Congratulation</h2>
+    <p class="modal-subtitle">Your registration has been successful</p>
+    <p class="modal-info">You'll be redirecting to homepage in
+        <span id="modalTimer" class="modal-timer">3</span> seconds</p>
+</div>
+
 <div class="app">
+
 
     <div class="first-section">
         <img src="./public/dino_small.png" alt="dino playing guitar"
@@ -30,7 +45,7 @@
             <h5 class="brand-title">MusicToon</h5>
         </div>
         <h2>Create Account for Free</h2>
-        <form class="form" action="/register" method="post">
+        <form id="register" class="form" action="/register" method="post">
 
             <div class="input-wrapper">
                 <label for="name" class="input-label">Name</label>
@@ -68,13 +83,13 @@
         <div class="logo-container">
 
             <img class="logo"
-                 src="/google.svg"
+                 src="./public/google.svg"
                  alt="">
             <img class="logo"
                  src="/facebook.svg"
                  alt="">
             <img class="logo"
-                 src="/apple.svg"
+                 src="./public/apple.svg"
                  alt="">
 
         </div>
